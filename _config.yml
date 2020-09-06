@@ -99,3 +99,9 @@ deploy:
   type: git
   repo: https://github.com/milayue/milayue.github.io.git
   branch: master
+
+backup:
+  type: git
+  message: update
+  repository:
+    github: git@github.com:milayue/milayue.github.io.git,backup
