@@ -61,10 +61,10 @@ class HelloWorld extends Component{
 [React Spring](https://www.react-spring.io/)
 
 
-
-
-
-
+## Axios
+- axios.get()
+- axios.post()
+- axios.delete()
 
 
 
