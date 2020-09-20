@@ -42,3 +42,9 @@ $ git remote add origin [repo URL]
 $ git remote -v
 $ git push -u origin master
 ```
+
+```bash [Daily use]
+$ git add .
+$ git commit -m "commit message"
+$ git push origin [branch name]
+```
