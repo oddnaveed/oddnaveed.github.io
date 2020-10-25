@@ -56,7 +56,6 @@ class HelloWorld extends Component{
 ```
 
 
-
 ## Transition
 [React Spring](https://www.react-spring.io/)
 
@@ -68,15 +67,14 @@ class HelloWorld extends Component{
 
 
 
+## Date
+```js
+const date = new Date();
 
-
-
-
-
-
-
-
-
+function formatDate(date){
+    return date.toLocaleDateString();
+}
+```
 
 
 ---

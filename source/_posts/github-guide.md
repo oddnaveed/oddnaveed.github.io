@@ -36,10 +36,9 @@ $ cat .gitignore
 
 ```bash [Upload to GitHub]
 $ git init
-$ git add .    //stage current folder
-$ git commit -m "initial commit"
 $ git remote add origin [repo URL]
-$ git remote -v
+$ git add .    //stage current folder
+$ git commit -m "initializing repository"
 $ git push -u origin master
 ```
 
@@ -47,4 +46,12 @@ $ git push -u origin master
 $ git add .
 $ git commit -m "commit message"
 $ git push origin [branch name]
+$ git push
 ```
+
+# Linkedin GitHub Learning
+## securing the workflow
+- pull request review
+- merge protections
+- require status checks to pass before merging
+

@@ -57,3 +57,10 @@ p{
 
 # Background Image
 
+```css
+body{
+    background-image: url('sunset.JPG');
+    /* background-size: 250px 160px;
+    background-repeat: no-repeat; */
+    background-size: cover;    /* fits the browser */
+```
