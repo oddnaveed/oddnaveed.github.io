@@ -1,5 +1,5 @@
 ---
-title: cits3004cybersecurity
+title: Cybersecurity
 date: 2020-08-03 12:47:35
 tags: [linux]
 categories: [software]
@@ -16,6 +16,8 @@ $  // end of a file
 .* any count of any characters
 grep '^a.*c$' newfile   // start with a, end with c
 ```
+
+<!--more>
 
 # Lab2: Encrypt & Decrypt
 
@@ -104,4 +106,3 @@ openssl -h  // help page with cipher type information
 
 ### OFB
 - message is treated as stream of bits
-- 
