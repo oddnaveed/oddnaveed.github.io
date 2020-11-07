@@ -29,3 +29,5 @@ echo "hello mila, hello hello";
 ```
 
 ## MySQL
+
+[mysql高级命令](https://juejin.im/post/6844903599915401230)

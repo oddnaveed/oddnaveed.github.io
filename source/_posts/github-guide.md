@@ -55,3 +55,10 @@ $ git push
 - merge protections
 - require status checks to pass before merging
 
+# enable prettier
+open command palette in vscode -> format document
+
+# delete the latest commit & discard the changes
+```bash
+git reset --hard HEAD~1
+```

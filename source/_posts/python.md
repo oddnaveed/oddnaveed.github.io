@@ -106,6 +106,13 @@ for i in x:
     print(f"i is {i}")
 ```
 
+# set
+- not allow duplicate elements
+```py
+a = set("a set does not allow duplicate elements")
+```
+
+
 # range
 - immutable
 ```py
@@ -134,8 +141,9 @@ def main():
     family = dict(baby = 'yue', brother = 'dog')
     for p in family:
         print(f'{p}: {family[p]}')
+    family['baby'] = 'haha'
+    print(family['baby'])
 ```
-
 
 # isinstance
 ```py
