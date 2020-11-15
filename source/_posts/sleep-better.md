@@ -1,7 +1,7 @@
 ---
 title: How to Sleep Better?
 date: 2020-01-25 23:18:40
-tags: [reading] [sleep]
+tags: [reading, sleep]
 categories: [reading]
 top:
 ---

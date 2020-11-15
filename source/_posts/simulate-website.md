@@ -21,7 +21,7 @@ visible: hide
 -   goal: keep track of the exact version of every package that is installed
 
 # sass and sourcemaps support
-
+- sass: superset of css
 [sass](https://sass-lang.com/install)
 [next-sass plugin](https://github.com/vercel/next-plugins/tree/master/packages/next-sass)
 [sourcemaps](https://github.com/vercel/next-plugins/tree/master/packages/next-source-maps)
@@ -59,4 +59,77 @@ todo: [learn about husky and lint-staged](https://juejin.im/post/684490377822784
     "tabWidth": 4
 }
 ```
+
+# add bootstrap
+- customise fonts and theme colors in `theme.scss`
+- add `_document.tsx`  (font api link included)
+
+```tsx [_document.tsx]
+import React from 'react'
+import Document, {
+  Html,
+  Head,
+  Main,
+  NextScript,
+  DocumentContext
+} from 'next/document'
+
+export default class MyDocument extends Document {
+  static async getInitialProps(ctx: DocumentContext) {
+    const initialProps = await Document.getInitialProps(ctx)
+    return { ...initialProps }
+  }
+
+  render() {
+    return (
+      <Html>
+        <Head>
+          {/* Typefaces from Google Fonts */}
+          <link
+            href='https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap'
+            rel='stylesheet'
+          />
+
+          {/* link to external stylesheet */}
+        </Head>
+        <body>
+          <Main />
+          <NextScript />
+        </body>
+      </Html>
+    )
+  }
+}
+```
+
+```scss [theme.scss]
+$theme-colors: (
+  "primary": #2e8251,
+  "secondary": #ffc04b,
+  "dark": #1e2530
+);
+
+$link-color: #63ace8;
+
+// typography
+$font-family-sans-serif: "Pinyon Script", cursive, -apple-system, BlinkMacSystemFont,
+  "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-monospace: "Pinyon Script", cursive, SFMono-Regular, Menlo, Monaco, Consolas,
+  "Liberation Mono", "Courier New", monospace !default;
+$font-family-base: $font-family-sans-serif;
+$headings-font-family: $font-family-monospace;
+
+// import Bootstrap
+@import "~bootstrap/scss/bootstrap";
+```
+
+# add reactstrap
+
+# add badges
+
+# add standard-version, changelog, commitizen
+
+
+
 

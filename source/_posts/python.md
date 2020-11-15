@@ -6,10 +6,12 @@ categories: [software]
 top:
 visible:
 ---
+
 # no perfectionist
 
 # running in vs code
-- to launch the python shell: 
+
+- to launch the python shell:
   - right click "run selection/line in python terminal"
   - right click "run python file in terminal"
 
@@ -17,7 +19,10 @@ visible:
 >>> exit()
 ```
 
+<!--more-->
+
 # variable type
+
 - use type() to check variable type
 
 ```py
@@ -26,24 +31,29 @@ print(type(cookies))
 ```
 
 # reserved words
+
 ```py
 import keyword
 print(keyword.kwlist)
 ```
 
 # get input
+
 - input("Type input here")
 
-
 # print()
+
 - string object has that format() function
+
 ```py
 x = 42
 print('this is {}'.format(x))
 
 print(f'this is {x}')
 ```
+
 # loops
+
 ```py
 words = ['one', 'two', 'three']
 
@@ -52,12 +62,14 @@ for i in words:
 ```
 
 # function
+
 ```py
 def function(n):
     print(n)
 ```
 
 # class
+
 ```py
 class Dog:
     def woof(self):
@@ -73,6 +85,7 @@ def main():
 ```
 
 # multi-line
+
 ```py
 x = '''
 
@@ -82,6 +95,7 @@ halloow
 ```
 
 # spaces
+
 ```py
 x = 'seven "{1:<9}" "{0:>9}"'.format(8, 9)   # fills with spaces
 print('x is {}'.format(x))
@@ -89,6 +103,7 @@ print(type(x))
 ```
 
 # float and decimal
+
 ```py
 from decimal import *
 a = Decimal('.10')
@@ -99,7 +114,9 @@ print(type(x))
 ```
 
 # tuple
+
 - immutable
+
 ```py
 x = ( 1, 2, 3, 4, 5)
 for i in x:
@@ -107,14 +124,17 @@ for i in x:
 ```
 
 # set
+
 - not allow duplicate elements
+
 ```py
 a = set("a set does not allow duplicate elements")
 ```
 
-
 # range
+
 - immutable
+
 ```py
 x = range(5, 50, 5)
 for i in x:
@@ -129,6 +149,7 @@ for i in x:
 ```
 
 # dictionary
+
 ```py
 x = { 'one': 1, 'two': 2, 'three': 3, 'four': 4}
 x['three'] = 333
@@ -146,6 +167,7 @@ def main():
 ```
 
 # isinstance
+
 ```py
 x = (1, 'two', 3.0, [4, 'four'], 5)
 if isinstance(x, tuple):
@@ -154,13 +176,15 @@ if isinstance(x, tuple):
 ```
 
 # conditional syntax
+
 ```py
-if 
+if
 elif
 else
 ```
 
 # conditional assignment
+
 ```py
 gift = 1
 say = 'thank you' if gift else 'treat or trick'
@@ -168,6 +192,7 @@ print(say)
 ```
 
 # bitwise operators
+
 ```py
 &   1 1 为 1
 |   0 1 为 1
@@ -176,8 +201,9 @@ print(say)
 ```
 
 # boolean operators
+
 ```py
-and 
+and
 or
 not
 in          value in set
@@ -208,11 +234,13 @@ def say_hello(*args):
             print(s)
     else: print('no hellos')
 
-if __name__ == '__main__': main()    
+if __name__ == '__main__': main()
 ```
 
 # decorator
+
 - pass the following function as a parameter
+
 ```py
 def f1(f):
     def f2():
@@ -255,3 +283,45 @@ def main():
 
 if __name__ == '__main__': main()
 ```
+
+# docstrings
+[source](https://www.kaggle.com/colinmorris/functions-and-getting-help)
+- provide a description to the funciton
+
+```py
+def least_difference(a, b, c):
+    """Return the smallest difference between any two numbers
+    among a, b and c.
+    
+    >>> least_difference(1, 5, -5)
+    4
+    """
+    diff1 = abs(a - b)
+    diff2 = abs(b - c)
+    diff3 = abs(a - c)
+    return min(diff1, diff2, diff3)
+```
+
+# sep
+- separate by
+
+```py
+def mod_5(x):
+    """Return the remainder of x after dividing by 5"""
+    return x % 5
+
+print(
+    'Which number is biggest?',
+    max(100, 51, 14),
+    'Which number is the biggest modulo 5?',
+    max(100, 51, 14, key=mod_5),
+    sep='\n',
+)
+```
+
+# list
+- .append(): append to the end of the list
+
+
+# number
+- `4000000` -> `4e6`

@@ -62,3 +62,8 @@ open command palette in vscode -> format document
 ```bash
 git reset --hard HEAD~1
 ```
+
+# pull changes from the master to the dev branch
+```bash
+git pull origin master
+```
