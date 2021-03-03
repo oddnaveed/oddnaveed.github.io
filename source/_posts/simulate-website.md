@@ -11,10 +11,8 @@ visible: hide
 
 # add [typescript](https://nextjs.org/docs/basic-features/typescript) support
 
-# add babel check nextjs site
-
+# [add babel](https://nextjs.org/docs/advanced-features/customizing-babel-config) check nextjs site
 -   javascript compiler
-
 
 # yarn.lock file
 
@@ -23,8 +21,9 @@ visible: hide
 # sass and sourcemaps support
 - sass: superset of css
 [sass](https://sass-lang.com/install)
-[next-sass plugin](https://github.com/vercel/next-plugins/tree/master/packages/next-sass)
-[sourcemaps](https://github.com/vercel/next-plugins/tree/master/packages/next-source-maps)
+```bash
+$ yarn add node-sass
+```
 
 # add typescript eslint parser & related packages
 

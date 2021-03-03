@@ -67,3 +67,11 @@ git reset --hard HEAD~1
 ```bash
 git pull origin master
 ```
+
+# reset remote url
+```
+git remote -v
+git remote set-url origin https://github.com/username/resposity.git
+git remote -v
+```
+

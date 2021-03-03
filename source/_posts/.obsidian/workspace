@@ -1,0 +1,93 @@
+{
+  "main": {
+    "id": "36789e0e703a2b81",
+    "type": "split",
+    "children": [
+      {
+        "id": "919cf68d62922b2a",
+        "type": "leaf",
+        "active": true,
+        "state": {
+          "type": "graph",
+          "state": {}
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a1476ede63f84183",
+    "type": "split",
+    "children": [
+      {
+        "id": "49bf63f25578f5a0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "dd9dca6e9dfe2b21",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "fddb83eae22a56d7",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "1c362a32ada366d8",
+    "type": "split",
+    "children": [
+      {
+        "id": "00eb2dd9279a1925",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6353e44c4f7747a5",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "lastOpenFiles": [
+    "github-guide.md",
+    "firebase.md",
+    "sleep-better.md",
+    "adv.md",
+    "tree.md",
+    "css.md",
+    "cits2200.md"
+  ]
+}
